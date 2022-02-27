@@ -29,8 +29,8 @@ const Home: NextPage = () => {
   return (
     <div>
       {
-          productData && productData.map((record) => (
-          <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+          productData && productData.map((record,idx) => (
+          <div key={idx} className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
         <div className="shrink-0">
           <img className="h-12 w-12" src={record.fields['imgUrl']} alt="ChitChat Logo"/>
         </div>
