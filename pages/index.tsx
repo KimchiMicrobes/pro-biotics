@@ -137,7 +137,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='flex py-2 bg-blue items-center justify-center flex-wrap'>
-        {types.map((type) => <FilterType type={type} />)}
+        {types.map((type, idx) => <FilterType key={idx} type={type} />)}
 
       </div>
       {/* 로고 & 서치 바 */}
