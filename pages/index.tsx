@@ -143,7 +143,7 @@ const Home: NextPage = () => {
       {/* 로고 & 서치 바 */}
       {
         productDatas && getFilteredSearchedData()?.map((productData, idx) =>
-          <ProductCard product={productData} idx={idx} />)
+          <ProductCard key={idx} product={productData} idx={idx} />)
       }
     </div>
   )
